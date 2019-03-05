@@ -1,0 +1,48 @@
+<div class="col-sm-12">
+  <div class="height-10"></div>
+  <div class="table-responsive">
+    <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger"
+           class="row-border hover">
+      <thead>
+      <tr>
+        <th>Movie title</th>
+        <th>Director name</th>
+        <th>First Actor name</th>
+        <th>Second Actor name</th>
+        <th>Genres</th>
+        <th>Language</th>
+        <th>Country</th>
+        <th>Content rating</th>
+        <th>Budget</th>
+        <th>Title year</th>
+        <th>Plot keywords</th>
+        <th>Movie imdb link</th>
+      </tr>
+      </thead>
+      <tbody *ngIf="moviesList?.length != 0">
+      <tr *ngFor="let movie of moviesList">
+        <td>{{movie.movie_title}}</td>
+        <td>{{movie.director_name}}</td>
+        <td>{{movie.actor_1_name}}</td>
+        <td>{{movie.actor_2_name}}</td>
+        <td>{{movie.genres}}</td>
+        <td>{{movie.language}}</td>
+        <td>{{movie.country}}</td>
+        <td>{{movie.content_rating}}</td>
+        <td>{{movie.budget}}</td>
+        <td>{{movie.title_year}}</td>
+        <td>{{movie.plot_keywords}}</td>
+        <td>{{movie.movie_imdb_link}}</td>
+      </tr>
+      </tbody>
+      <tbody *ngIf="moviesList?.length == 0">
+      <tr>
+        <td colspan="3" class="no-data-available">No data!</td>
+      </tr>
+      <tbody>
+    </table>
+  </div>
+</div>
+
+
+
