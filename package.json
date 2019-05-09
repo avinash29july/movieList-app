@@ -25,14 +25,14 @@
     "core-js": "^2.5.4",
     "datatables.net": "^1.10.19",
     "datatables.net-dt": "^1.10.19",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.1",
     "jqwidgets-scripts": "^7.0.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.13.0",
+    "@angular-devkit/build-angular": "^0.13.9",
     "@angular/cli": "~7.3.1",
     "@angular/compiler-cli": "^7.2.7",
     "@angular/language-service": "^7.2.4",
